@@ -1,5 +1,17 @@
 {
   "devDependencies": {
     "typecript": "^0.0.1-security"
-  }
+  },
+  "name": "aulats-codigos",
+  "description": "Códigos das aulas de Typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
 }
