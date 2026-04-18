@@ -1,9 +1,24 @@
+
+
+let media = 0
+
+media = "2"
+
+
+
+
+
+
 //####### CONCEITO DE INFERêNCIA ########
 
 // Você não precisa escrever: let curso: string = "ADS";
-let curso = "ADS"; // O TS já inferiu que é STRING
+let curso; // O TS já inferiu que é STRING
 //curso = 10; 
 // Erro: Type 'number' is not assignable to type 'string'.
+
+let valor:string = "10"
+
+valor ="Amor"
 
 
 // ######FALHA DE INFERÊNCIA######
@@ -11,9 +26,12 @@ let disciplina; // Aqui o TS define como tipo 'any' (perigoso!)
 disciplina = "Programação II"; // Aceita
 disciplina = 2; // Também aceita (perdemos a segurança)
 
+let variavel = ["Maria"]
+variavel.push(10)
+variavel.push("Maria")
 
 //############ UNION TYPES ###############
-let veiculo:string[]=["Porta","Motor","Banco"] // só aceita strings
+let veiculo:string[]=["Porta","Motor","Banco",300] // só aceita strings
 
 let carro:(string|number)[]=["Pneu","Motor",1500] // aceita strings ou números
 
