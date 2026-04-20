@@ -21,6 +21,19 @@ const cidades = ["Tobias Barreto", "Aracaju"];
 
 //############## PRINCIPAIS COMANDOS COM ARRAYS ###################
 
+// lenght serve para retornar quantos elementos tem em um array
+let frutas: string[] = ["Maçã", "Banana", "Uva"];
+
+console.log(frutas.length); 
+// Resultado: 3
+
+let alunos = ["Ana", "Beto", "Carlos"];
+// O length é 3, mas o índice do Carlos é 2.
+
+let ultimo = alunos[alunos.length - 1]; 
+console.log(ultimo); // "Carlos"
+
+
 //push(): Insere um novo elemento ao final do array.
 let cores: string[] = ["Verde", "Azul", "Amarelo"];
 cores.push("Vermelho"); // ["Verde", "Azul", "Amarelo", "Vermelho"]
